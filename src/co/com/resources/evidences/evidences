@@ -1,0 +1,43 @@
+
+Sun Jun 07 13:41:56 COT 2020
+Descripción de la prueba: Creación de nueva cuenta
+Credenciales: Credentials(user=mngr264601, password=Ymudyvu, userId=12924, accountId=79542, emailId=sgtest@correo.com)
+Detalles del cliente: Customer(name=Steven, gender=m, dateOfbirth=03062020, address=Cll Falsa 123, city=MDE, state=ANT, pin=61140919, mobile=57123313121, email=GuruTest_01385@correo.com, password=admin)
+Detalles de la cuenta: Account(accountId=79542, initDeposit=102433, typeAccount=Savings, userIdAccount=12924, success=true)
+===========================================================================================
+Sun Jun 07 13:41:58 COT 2020
+Descripción de la prueba: Eliminación de cuenta
+Credenciales: Credentials(user=mngr264601, password=Ymudyvu, userId=12924, accountId=79542, emailId=sgtest@correo.com)
+Detalles del cliente: Customer(name=Steven, gender=m, dateOfbirth=03062020, address=Cll Falsa 123, city=MDE, state=ANT, pin=61140919, mobile=57123313121, email=GuruTest_01385@correo.com, password=admin)
+Detalles de la cuenta: Account(accountId=79542, initDeposit=102433, typeAccount=Savings, userIdAccount=null, success=null)
+===========================================================================================
+Sun Jun 07 13:43:30 COT 2020
+Descripción de la prueba: Creación de cliente
+Credenciales: Credentials(user=mngr264601, password=Ymudyvu, userId=null, accountId=null, emailId=sgtest@correo.com)
+Detalles del cliente: Customer(name=Steven, gender=m, dateOfbirth=03062020, address=Cll Falsa 123, city=MDE, state=ANT, pin=null, mobile=57123313121, email=null, password=admin)
+Detalles de la cuenta: Account(accountId=null, initDeposit=null, typeAccount=null, userIdAccount=null, success=null)
+===========================================================================================
+Sun Jun 07 13:44:02 COT 2020
+Descripción de la prueba: Registro de usuario
+Credenciales: Credentials(user=mngr264601, password=Ymudyvu, userId=null, accountId=null, emailId=sgtest@correo.com)
+Detalles del cliente: Customer(name=null, gender=null, dateOfbirth=null, address=null, city=null, state=null, pin=null, mobile=null, email=null, password=null)
+Detalles de la cuenta: Account(accountId=null, initDeposit=null, typeAccount=null, userIdAccount=null, success=null)
+===========================================================================================
+Sun Jun 07 13:44:35 COT 2020
+Descripción de la prueba: Creación de nueva cuenta
+Credenciales: Credentials(user=mngr264601, password=Ymudyvu, userId=57908, accountId=79543, emailId=sgtest@correo.com)
+Detalles del cliente: Customer(name=Steven, gender=m, dateOfbirth=03062020, address=Cll Falsa 123, city=MDE, state=ANT, pin=4816462, mobile=57123313121, email=GuruTest_01738@correo.com, password=admin)
+Detalles de la cuenta: Account(accountId=79543, initDeposit=102433, typeAccount=Savings, userIdAccount=57908, success=true)
+===========================================================================================
+Sun Jun 07 13:45:08 COT 2020
+Descripción de la prueba: Creación de nueva cuenta
+Credenciales: Credentials(user=mngr264601, password=Ymudyvu, userId=33120, accountId=79544, emailId=sgtest@correo.com)
+Detalles del cliente: Customer(name=Steven, gender=m, dateOfbirth=03062020, address=Cll Falsa 123, city=MDE, state=ANT, pin=14741863, mobile=57123313121, email=GuruTest_01980@correo.com, password=admin)
+Detalles de la cuenta: Account(accountId=79544, initDeposit=102433, typeAccount=Savings, userIdAccount=33120, success=true)
+===========================================================================================
+Sun Jun 07 13:45:11 COT 2020
+Descripción de la prueba: Eliminación de cuenta
+Credenciales: Credentials(user=mngr264601, password=Ymudyvu, userId=33120, accountId=79544, emailId=sgtest@correo.com)
+Detalles del cliente: Customer(name=Steven, gender=m, dateOfbirth=03062020, address=Cll Falsa 123, city=MDE, state=ANT, pin=14741863, mobile=57123313121, email=GuruTest_01980@correo.com, password=admin)
+Detalles de la cuenta: Account(accountId=79544, initDeposit=102433, typeAccount=Savings, userIdAccount=null, success=null)
+===========================================================================================
