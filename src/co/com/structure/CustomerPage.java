@@ -119,13 +119,13 @@ public class CustomerPage  extends BaseClass {
     public String deleteAccount(Account account) throws InterruptedException {
         scroll();
         click(locator.locatorLink("Delete Account"));
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         //Se valida que se haya desplegado un elemento de la página solicitada
         if (Boolean.TRUE.equals(isDisplayed(locator.locatorName("accountno")))) {
             writeValues(account.getAccountId(), locator.locatorName("accountno"));
             click(locator.locatorName("AccSubmit"));
             //Se confirma la eliminación de la cuenta mediante la alerta que presenta el navegador
-            Thread.sleep(1000);
+            Thread.sleep(2000);
             Alert alert = webDriver.switchTo().alert();
             alert.accept();
             String textAlert = alert.getText();
