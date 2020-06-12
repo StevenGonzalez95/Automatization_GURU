@@ -1,0 +1,4 @@
+Automatización con structura POM y anotaciones Lombok.
+El proyecto tiene las librerías para utilizar lombok, en ocasiones se necesita activar las anotaciones de procesamiento del IDE
+Configuración: Instalar el plugin de Lombok y tener las anotaciones de procesamiento activadas
+Tener JDK 1.8
