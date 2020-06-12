@@ -51,6 +51,7 @@ public class CustomerPage  extends BaseClass {
         Thread.sleep(1000);
         if (Boolean.TRUE.equals(isDisplayed(locator.locatorName("name")))) {
             structureDataNewCustomer(customer);
+            Thread.sleep(1000);
             try{
                 //Se valida si el usuario está repetido para generar de nuevo los datos
                 Alert alert= webDriver.switchTo().alert();
@@ -124,6 +125,7 @@ public class CustomerPage  extends BaseClass {
             writeValues(account.getAccountId(), locator.locatorName("accountno"));
             click(locator.locatorName("AccSubmit"));
             //Se confirma la eliminación de la cuenta mediante la alerta que presenta el navegador
+            Thread.sleep(1000);
             Alert alert = webDriver.switchTo().alert();
             alert.accept();
             String textAlert = alert.getText();
