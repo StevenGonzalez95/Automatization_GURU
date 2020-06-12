@@ -73,7 +73,7 @@ public class CustomerPage  extends BaseClass {
 
     public void structureDataNewCustomer(Customer customer){
         //Se estructuran los datos para la creación del cliente
-        customer.setEmail("GuruTest_01"+(int) ramdon(1, 999) + "@correo.com");
+        customer.setEmail("GuruTest_2"+(int) ramdon(1, 999) + "@correo.com");
         customer.setPin(String.valueOf((int) ramdon(1, 99999999)));
         writeValues(customer.getName(), locator.locatorName("name"));
         click(locator.locatorXpath("//input[@value='"+customer.getGender()+"']"));
