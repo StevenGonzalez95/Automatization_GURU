@@ -1,4 +1,14 @@
 Automatización con structura POM y anotaciones Lombok.
 El proyecto tiene las librerías para utilizar lombok, en ocasiones se necesita activar las anotaciones de procesamiento del IDE
-Configuración: Instalar el plugin de Lombok y tener las anotaciones de procesamiento activadas
+Configuración: Instalar el plugin de Lombok (si es necesario) y tener las anotaciones de procesamiento activadas
+Proceos para configurar Lombok para los IDE's
+ *En la carpeta libs del proyecto se encuentra un jar llamado "lombok.jar". Descargarlo en la máquina donde se ejecuta la prueba
+ *Ir a la ruta donde se descargó el lombok.jar y abrir línea de comandos en esta ruta
+ *Ejecutar la siguiente línea de código: java -jar lombok.jar lo cuál abrirá una ventana de lombok y escaneará los IDE's que necesiten lombok
+ *Elegir el IDE que se está utilizando y elegir la opción install/update. Nos aparecerá una ventana donde dice que ya ha sido instalado.
+ *Finalizamos la instalación en Quit install
+ *Reiniciamos el IDE si lo tenemos abierto, si no, lo abrimos normalmente.
+ En esta página se encuentran los pasos https://openwebinars.net/blog/como-instalar-y-usar-lombok/ 
+ 
+ 
 Tener JDK 1.8
