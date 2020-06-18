@@ -3,6 +3,7 @@ package co.com.structure;
 import co.com.structure.models.Account;
 import co.com.structure.models.Credentials;
 import co.com.structure.models.Customer;
+import co.com.structure.models.EditAccount;
 import lombok.extern.slf4j.Slf4j;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.JavascriptExecutor;
@@ -10,6 +11,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 
 @Slf4j
@@ -73,7 +75,7 @@ public class CustomerPage  extends BaseClass {
 
     public void structureDataNewCustomer(Customer customer){
         //Se estructuran los datos para la creación del cliente
-        customer.setEmail("GuruTest_2"+(int) ramdon(1, 999) + "@correo.com");
+        customer.setEmail("GuruTest_7"+(int) ramdon(1, 999) + "@correo.com");
         customer.setPin(String.valueOf((int) ramdon(1, 99999999)));
         writeValues(customer.getName(), locator.locatorName("name"));
         click(locator.locatorXpath("//input[@value='"+customer.getGender()+"']"));
@@ -89,7 +91,7 @@ public class CustomerPage  extends BaseClass {
     }
 
     public Account newAccount(Credentials credentials, Account account) throws InterruptedException {
-        Thread.sleep(1000);
+        TimeUnit.MILLISECONDS.sleep(1000);
         Account accountResponse = new Account();
         scroll();
         click(locator.locatorLink("New Account"));
@@ -134,6 +136,50 @@ public class CustomerPage  extends BaseClass {
         }else{
             return "No se pudo eliminar la cuenta";
         }
+    }
+
+    public EditAccount editAccount(Account account, Customer customer) throws InterruptedException {
+        EditAccount accountEdited = new EditAccount();
+        Boolean validation = false;
+        scroll();
+        click(locator.locatorLink("Edit Account"));
+        TimeUnit.MILLISECONDS.sleep(1000);
+        if (Boolean.TRUE.equals(isDisplayed(locator.locatorName("accountno")))) {
+            writeValues(account.getAccountId(),locator.locatorName("accountno"));
+            click(locator.locatorName("AccSubmit"));
+
+            TimeUnit.MILLISECONDS.sleep(1000);
+            if (Boolean.TRUE.equals(isDisplayed(locator.locatorName("txtinitdep")))) {
+                click(locator.locatorXpath("//option[@value='" + account.getTypeAccount() + "']"));
+                click(locator.locatorName("AccSubmit"));
+
+
+                accountEdited.setAccountId(account.getAccountId());
+                accountEdited.setUserIdAccount(findElements(locator.locatorTag("td")).get(7).getText());
+                accountEdited.setCustomerNamer(findElements(locator.locatorTag("td")).get(9).getText());
+                accountEdited.setEmail(findElements(locator.locatorTag("td")).get(11).getText());
+                accountEdited.setTypeAccount(findElements(locator.locatorTag("td")).get(13).getText());
+                //CustomerID
+                validation = findElements(locator.locatorTag("td")).get(7).getText()
+                        .equals(account.getUserIdAccount()) ? true : false;
+                //Validación de nombre del cliente
+                validation = findElements(locator.locatorTag("td")).get(9).getText()
+                        .equals(customer.getName()) ? true : false;
+                //Validación de email
+                validation = findElements(locator.locatorTag("td")).get(11).getText()
+                        .equals(customer.getEmail()) ? true : false;
+                //Validación de tipo de cuenta
+                validation = findElements(locator.locatorTag("td")).get(13).getText()
+                        .equals(account.getTypeAccount()) ? true : false;
+
+            }
+        }
+
+        return  accountEdited;
+
+
+
+
     }
 
     //Se realiza scroll de la página para encontrar el elemento
