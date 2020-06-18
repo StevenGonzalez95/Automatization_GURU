@@ -1,0 +1,13 @@
+
+Thu Jun 18 08:01:52 CDT 2020
+Descripción de la prueba: Creación de nueva cuenta
+Credenciales: Credentials(user=mngr264601, password=Ymudyvu, userId=24213, accountId=80372, emailId=sgtest@correo.com)
+Detalles del cliente: Customer(name=Steven, gender=m, dateOfbirth=03062020, address=Cll Falsa 123, city=MDE, state=ANT, pin=66448333, mobile=57123313121, email=GuruTest_7620@correo.com, password=admin)
+Detalles de la cuenta: Account(accountId=80372, initDeposit=102433, typeAccount=Savings, userIdAccount=24213, success=true)
+===========================================================================================
+Thu Jun 18 08:01:58 CDT 2020
+Descripción de la prueba: Caso de prueba de editar cuenta
+Credenciales: Credentials(user=mngr264601, password=Ymudyvu, userId=24213, accountId=80372, emailId=sgtest@correo.com)
+Detalles del cliente: Customer(name=Steven, gender=m, dateOfbirth=03062020, address=Cll Falsa 123, city=MDE, state=ANT, pin=66448333, mobile=57123313121, email=GuruTest_7620@correo.com, password=admin)
+Detalles de la cuenta: Account(accountId=80372, initDeposit=102433, typeAccount=Current, userIdAccount=24213, success=null)
+===========================================================================================

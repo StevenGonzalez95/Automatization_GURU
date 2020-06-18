@@ -159,18 +159,6 @@ public class CustomerPage  extends BaseClass {
                 accountEdited.setCustomerNamer(findElements(locator.locatorTag("td")).get(9).getText());
                 accountEdited.setEmail(findElements(locator.locatorTag("td")).get(11).getText());
                 accountEdited.setTypeAccount(findElements(locator.locatorTag("td")).get(13).getText());
-                //CustomerID
-                validation = findElements(locator.locatorTag("td")).get(7).getText()
-                        .equals(account.getUserIdAccount()) ? true : false;
-                //Validación de nombre del cliente
-                validation = findElements(locator.locatorTag("td")).get(9).getText()
-                        .equals(customer.getName()) ? true : false;
-                //Validación de email
-                validation = findElements(locator.locatorTag("td")).get(11).getText()
-                        .equals(customer.getEmail()) ? true : false;
-                //Validación de tipo de cuenta
-                validation = findElements(locator.locatorTag("td")).get(13).getText()
-                        .equals(account.getTypeAccount()) ? true : false;
 
             }
         }
