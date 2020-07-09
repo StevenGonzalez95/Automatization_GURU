@@ -9,7 +9,7 @@ public class DataTest {
 
     public Credentials modelCredentials(){
         Credentials credentials = new Credentials();
-        credentials.setEmailId("conflictorGit@correo.com");
+        credentials.setEmailId("feauture/ConflictoGitAferStash@correo.com");
         return  credentials;
     }
 
